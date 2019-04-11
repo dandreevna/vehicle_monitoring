@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Трекеры</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+         <div id="myModal" class="modal"> 
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <center><h>Оставьте заявку<br>заполнив контактные данные</h>
+                        <p>Наш менеджер свяжется с Вами в течении<br>5 минут</p>
+                    </center>
+                </div>
+                <div class="modal-body">
+                    <form method="post" id="modal_form" action="" >
+                        <p>Имя</p>
+                        <input type="text" name="name" class="user check" data-validation="required"><br> 
+                        <p>Телефон</p>
+                        <input type="text" name="phonenumber" class="phone check" data-validation="required"><br> 
+                        <p>E-mail</p>
+                        <input type="text" name="mail" class="mail check" data-validation="email"><br> 
+                        <p>Введите сообщение</p>
+                        <textarea name="message" class="message"></textarea><br>     
+                </div>
+                <div class="modal-footer">
+                        <center><input type="button" id="btn_modal_form" class="btn_yellow" value="Отправить" /></center>
+                        <p>Согласие на обработку персональных данных</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="degubGrid">
+            <div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <section class="black black_trackers">
+            <div class="wrapper">
+                <img src="img/logo.png" class="img_monitoring">
+                <img src="img/trackers_bleak.png" id="trackers_bleak" class="img">
+                <ul class="menu">
+                    <li><a href="index.html">Мониторинг транспорта</a></li>
+                    <li id="li_nav_prod">
+                        <a href="#" id="a_nav_prod">Продукты и услуги</a>
+                        <div class="nav_prod">
+                            <a href="agronavigators.html">Агронавигаторы</a>
+                            <a href="fuel_control.html">Контроль топлива</a>
+                            <a href="DUT.html">Датчик уровня топлива</a>
+                            <a href="trackers.html">GPS/ГЛОНАСС трекеры</a>
+                            <a href="dopog.html">Переоборудование<br>под допог</a>     
+                            <a href="speed_limiters.html">Устройства ограничения скорости</a>
+                            <a href="dvm.html">Выключатели массы</a>
+                            <a href="wialon.html">Wialon мониторинг</a>
+                            <a href="axle_load.html">Нагрузка на ось</a>
+                        </div>
+                    </li>
+                    <li><a href="portfolio.html">Портфолио</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li id="tel"><a href="#" id="zvonok" class="btn_modal">Заказать звонок</a><br><a href="tel:+78002222222">8 800 222 22 22</a></li>
+                </ul>
+                <div class="item_black">
+                    <h1>GPS/ ГЛОНАСС ТРЕКЕРЫ</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                    <input class="btn_yellow btn_modal" type="submit" value="Заказать">
+                </div>                  
+            </div>
+        </section>
+
+        <section class="white1 white1_DUT white1_trackers">
+            <div class="wrapper">
+                <h2>Заголовок<br>Н2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="items_white1"> 
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/1.jpg" id="dut_1">
+                        </div>
+                        <p>Galileo</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/2.jpg" id="dut_2">
+                        </div>
+                        <p>ASC-6</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/3.jpg" id="dut_3">
+                        </div>
+                        <p>Arusnavi</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/4.jpg" id="dut_4">
+                        </div>
+                        <p>ASC 7</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/5.jpg" id="dut_5">
+                        </div>
+                        <p>ASC-8</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/6.jpg" id="dut_6">
+                        </div>
+                        <p>asc 2</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/7.jpg" id="dut_7">
+                        </div>
+                        <p>Omnicomm Profi</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/8.jpg" id="dut_8">
+                        </div>
+                        <p>omnicomm profi 2.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/9.jpg" id="dut_9">
+                        </div>
+                        <p>omnicomm profi 3.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/10.jpg" id="dut_10">
+                        </div>
+                        <p>Omnicomm Optim</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/11.jpg" id="dut_11">
+                        </div>
+                        <p>Omnicomm Optim 2.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/12.jpg" id="dut_12">
+                        </div>
+                        <p>omnicomm optim 3.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/13.jpg" id="dut_13">
+                        </div>
+                        <p>Omnicomm Light</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/14.jpg" id="dut_14">
+                        </div>
+                        <p>Omnicomm Light 2.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/15.jpg" id="dut_15">
+                        </div>
+                        <p>ASC-3</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/16.jpg" id="dut_16">
+                        </div>
+                        <p>гранит навигатор 4.10</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/17.jpg" id="dut_17">
+                        </div>
+                        <p>Гранит-навигатор-5</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/18.jpg" id="dut_18">
+                        </div>
+                        <p>гранит навигатор 4.14</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/19.jpg" id="dut_19">
+                        </div>
+                        <p>АПК ASC-1</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/20.png" id="dut_20">
+                        </div>
+                        <p>Arnavi 4</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/21.jpg" id="dut_21">
+                        </div>
+                        <p>Arnavi Integral 3</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/22.png" id="dut_22">
+                        </div>
+                        <p>ARNAVI INTEGRAL 2</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/23.png" id="dut_23">
+                        </div>
+                        <p>ARNAVI 5</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/24.jpg" id="dut_24">
+                        </div>
+                        <p>Трекер FM-500 Light</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/25.jpg" id="dut_25">
+                        </div>
+                        <p>GALILEOSKY v 5.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/26.jpg" id="dut_26">
+                        </div>
+                        <p>Ruptela FM Eco4</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/27.jpg" id="dut_27">
+                        </div>
+                        <p>SAT-LITE 2</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/28.png" id="dut_28">
+                        </div>
+                        <p>ADM 100</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/29.png" id="dut_29">
+                        </div>
+                        <p>ADM 300</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/30.jpg" id="dut_30">
+                        </div>
+                        <p>АвтоГРАФ-GSM</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/31.jpg" id="dut_31">
+                        </div>
+                        <p>Teltonika RUT955</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/32.png" id="dut_32">
+                        </div>
+                        <p>Galileosky 7.0 Lite</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/33.png" id="dut_33">
+                        </div>
+                        <p>Galileosky 7.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/34.png" id="dut_34">
+                        </div>
+                        <p>Galileosky base block lite</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/35.png" id="dut_35">
+                        </div>
+                        <p>Galileosky base block optimum</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/36.png" id="dut_36">
+                        </div>
+                        <p>Galileosky v 2.5</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/37.png" id="dut_37">
+                        </div>
+                        <p>Galileosky v 5.1</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/38.png" id="dut_38">
+                        </div>
+                        <p>Galileosky v 5.0</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/39.jpg" id="dut_39">
+                        </div>
+                        <p>iON Connect</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/40.png" id="dut_40">
+                        </div>
+                        <p>Galileosky Boxfinder</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/41.jpg" id="dut_41">
+                        </div>
+                        <p>MIELTA M3</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/42.jpg" id="dut_42">
+                        </div>
+                        <p>ADM007</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/43.jpg" id="dut_43">
+                        </div>
+                        <p>ruptela fm eco4 light</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/44.jpg" id="dut_44">
+                        </div>
+                        <p>ruptela fm eco4</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/45.jpg" id="dut_45">
+                        </div>
+                        <p>ruptela fm pro4</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/46.jpg" id="dut_46">
+                        </div>
+                        <p>Teltonika FM1100</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/47.jpg" id="dut_47">
+                        </div>
+                        <p>TELTONIKA FM1110</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/48.jpg" id="dut_48">
+                        </div>
+                        <p>Teltonika FM1120</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/49.jpg" id="dut_49">
+                        </div>
+                        <p>Teltonika FM1125</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/50.jpg" id="dut_50">
+                        </div>
+                        <p>Teltonika FM1200</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/51.jpg" id="dut_51">
+                        </div>
+                        <p>Teltonika FM1202</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/52.jpg" id="dut_52">
+                        </div>
+                        <p>Teltonika FM5500</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/53.jpg" id="dut_53">
+                        </div>
+                        <p>Teltonika FMA110</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/54.jpg" id="dut_54">
+                        </div>
+                        <p>Teltonika FMA120</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/55.jpg" id="dut_55">
+                        </div>
+                        <p>TELTONIKA FMB630</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/56.jpg" id="dut_56">
+                        </div>
+                        <p>Teltonika FMB900</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/57.jpg" id="dut_57">
+                        </div>
+                        <p>Teltonika FMB920</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/58.jpg" id="dut_58">
+                        </div>
+                        <p>Teltonika LV-CAN200</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/59.jpg" id="dut_59">
+                        </div>
+                        <p>Arnavi Integral</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/60.jpg" id="dut_60">
+                        </div>
+                        <p>СИГНАЛ S-2551</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/61.jpg" id="dut_61">
+                        </div>
+                        <p>СМАРТ S-2333</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/62.jpg" id="dut_62">
+                        </div>
+                        <p>emg 1 эра глонасс</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/63.jpg" id="dut_63">
+                        </div>
+                        <p>FORT-112</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/64.jpg" id="dut_64">
+                        </div>
+                        <p>ГРАНИТ ЭРА-ГЛОНАСС</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/65.jpg" id="dut_65">
+                        </div>
+                        <p>FORT-111 M</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/66.jpg" id="dut_66">
+                        </div>
+                        <p>MT-700 Lite</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/67.jpg" id="dut_67">
+                        </div>
+                        <p>MT-700 Std</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/68.jpg" id="dut_68">
+                        </div>
+                        <p>мт 700 pro open</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/69.jpg" id="dut_69">
+                        </div>
+                        <p>MT-700 OBD-Dongle</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/70.png" id="dut_70">
+                        </div>
+                        <p>АвтоГРАФ-GSM+WiFi</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/71.jpg" id="dut_71">
+                        </div>
+                        <p>АвтоГРАФ-SL</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/72.jpg" id="dut_72">
+                        </div>
+                        <p>FORT-112EG-M</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/73.jpg" id="dut_73">
+                        </div>
+                        <p>Omnicomm АСН</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/74.jpg" id="dut_74">
+                        </div>
+                        <p>FleetGuide-3</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/75.jpg" id="dut_75">
+                        </div>
+                        <p>FleetGuide-1</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/76.jpg" id="dut_76">
+                        </div>
+                        <p>FleetGuide-2</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                    <div class="item_white1">
+                        <div class="img_dut">
+                            <img src="img/trackers/77.jpg" id="dut_77">
+                        </div>
+                        <p>FleetGuide-4</p>
+                        <input class="btn_yellow btn_modal" type="submit" value="ЦЕНА">
+                        <input class="btn_white btn_modal" type="submit" value="ПОДРОБНЕЕ">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="yellow yellow_DUT">
+            <div class="wrapper">
+                <img src="img/trackers_tracker.png" id="trackers_tracker" class="img">
+                <img src="img/index_phone.png" id="index_phone" class="img"> 
+                <div class="item_yellow">
+                    <h2>Заполните форму</h2>
+                    <p>мы свяжемся с Вами в течении 10 минут</p>
+                    <form method="post" id="yellow_form" action="" >
+                        <input type="text" class="user check" name="user" data-validation="required">
+                        <input type="text" class="phone check" name="phone" data-validation="required">
+                        <input type="button" class="btn_white" value="Отправить" id="yellow_form_btn">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="white2 white2_DUT">
+            <div class="wrapper">
+                <h2>Почему мы?</h2>
+                <img src="img/index_gps.png" id="index_gps" class="img">   
+                <div class="items_white2"> 
+                    <div class="item_white2" id="w12">
+                        <p>Опыт более 12 лет</p>
+                    </div>
+                    <div class="item_white2" id="map">
+                        <p>Сеть сервисных центров по РФ</p>
+                    </div>
+                    <div class="item_white2" id="arms">
+                        <p>Оборудование напрямую с завода</p>
+                    </div>
+                </div>
+                <div class="items_white2"> 
+                    <div class="item_white2" id="w24">
+                        <p>Оперативные выезды в течение 24 ч</p>
+                    </div>
+                    <div class="item_white2" id="shield">
+                        <p>Тех.персонал с опытом более 5-ти лет</p>
+                    </div>
+                    <div class="item_white2" id="piggy">
+                        <p>Зарабатываем только когда вы экономите</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="white3 white3_DUT">
+            <div class="wrapper">
+                <img src="img/index_treker.png" id="index_treker" class="img">
+                <h2>Заголовок<br>H2</h2>
+                <div class="column">
+                    <p style="padding-top: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?</p>
+                    <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non</p>
+                    <p class="right">Если Вы не нашли ответ звоните по телефону 8 800 222 22 22<input class="btn_yellow btn_modal" type="submit" value="Заказать"></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="items_footer"> 
+                    <div class="item_footer" id="soc_seti">
+                        <img src="img/logo.png" id="logo_footer">
+                        <br>
+                        <a href="#"><img src="img/vk.png"></a>
+                        <a href="#"><img src="img/paper.png"></a>
+                        <a href="#"><img src="img/whatsApp.png"></a>
+                        <p>COPYRIGHT 2007-2018</p>
+                    </div>
+
+                     <div class="item_footer">
+                        <a href="fuel_control.html">Контроль топлива</a>
+                        <a href="DUT.html">Датчик уровня топлива</a>
+                        <a href="trackers.html">GPS/ГЛОНАСС трекеры</a>
+                        <a href="dopog.html">Переоборудование<br>под допог</a>
+                    </div>
+
+                    <div class="item_footer" >
+                        <a href="speed_limiters.html">Устройства ограничения скорости</a>
+                        <a href="dvm.html">Выключатели массы</a>
+                        <a href="wialon.html">Wialon мониторинг</a>
+                        <a href="axle_load.html">Нагрузка на ось</a>
+                    </div>
+
+                    <div class="item_footer" id="contacts">
+                        <div class="geo"><p>г. Воронеж,  ул. Ленина дом1</p></div>
+                        <div class="phone2"><a href="tel:+78002222222"><p>8 800 222 22 22</a></p></div>
+                        <div class="clock"><p>Пн-Пт: 8:00-19:00</p></div>
+                        <div class="mail"><a href="mailto:monitoring@mail.ru"><p>monitoring@mail.ru</p></a></div>
+                    </div>              
+                </div>  
+            </div>
+        </footer>
+
+    </body>
+</html>
