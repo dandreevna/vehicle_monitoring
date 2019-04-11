@@ -1,0 +1,70 @@
+.white1_contacts{
+	p{
+		padding-top: 40px;
+		padding-bottom: 0;
+		font-weight: bold;
+	}
+
+	#last{
+		display: block;
+		width: 60%;
+		padding-bottom: 50px;
+		font-weight: lighter;
+		font-size: 16px;
+		line-height: 1.7;
+	}
+
+}
+
+.right_contacts{
+	position: absolute;
+	right: 100px;
+	top: 150px;
+	//background-color: red;
+	p{
+		padding-top: 30px;
+		padding-bottom: 0;
+		font-size: 25px;
+	}
+	a{
+		direction: none;
+		color: @color_white_text;
+	}
+	padding-bottom: 80px;
+
+	#soc_seti{
+		img{
+			width: 30px;
+			height: auto;
+		}
+		margin-top: 50px;
+		a{
+			margin-right: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.right_contacts{
+		position: static;
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.white1_contacts{
+	    #last{
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.right_contacts{
+		p{
+			padding-top: 30px;
+			padding-bottom: 0;
+			font-size: 20px;
+		}
+	}
+}

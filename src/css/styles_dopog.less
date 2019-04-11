@@ -1,0 +1,72 @@
+.black{
+	#dopog_fura{
+		position:absolute;
+        right: -40px;
+        top: 140px;
+	}
+}
+
+.yellow{
+	#dopog_uos{
+        position:absolute;
+        top: -230px;
+        left: -215px;
+    }
+}
+
+.white3_dopog{
+	h2{
+		padding-top: 90px;
+	}
+	padding-bottom: 70px;
+}
+
+.items_white1_dopog{
+	.row-flex();
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-bottom: -60px;
+
+	.item_white1_dopog{
+		.col();
+        .size(3);
+        .size-md(6);
+        .size-xs(12);
+        text-align: center; 
+		background-image: url('../img/dopog_fon.png');
+    	background-size: cover;
+    	position:relative;
+    	.arrow{
+    		position:absolute;
+    		bottom: 5%;
+    		right: 40%;
+    		cursor: pointer;
+    		transition:all 0.2s ease;
+    		// width: 23%;
+    		// height: auto;
+    	}
+    	.arrow:hover{
+		    transform: scale(1.03);
+		}
+	}
+}
+
+@media screen and (max-width: 1135px) {
+    .black_dopog{
+        #dopog_fura{
+            display: none;
+        }
+        .item_black{
+            width: 100%;
+            p{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1050px){
+	.items_white1_dopog{
+	    margin-bottom: 0;
+	}
+}
